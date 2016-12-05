@@ -1,0 +1,97 @@
+\documentclass{beamer}
+
+%% Necessary
+\usepackage{graphicx}  % supports importing graphics
+\usepackage{dcolumn}  % supports more flexible tables
+\usepackage{epstopdf}  % converts eps to pdf so that pdflatex can be used with eps figures
+\usepackage{amsmath}  % provides ams math environments
+\usepackage{natbib} % bibliography styles
+
+
+%% Typeface packages
+% \usepackage{fourier}  % fourier font, with math support
+\usepackage{charter}  % charter font, with math support
+% \usepackage{mathptmx}  % times font, with math support
+\usepackage[T1]{fontenc}  % sets font encoding
+
+
+%% Optional
+% \usepackage{units}  % standardised display of units
+% \usepackage{enumitem}  % more flexible enumeration
+% \usepackage{url}  % typesets urls with the \url command
+% \usepackage{hyperref}  % enable hyperlinks for internal references
+% \usepackage{verbatim}  % reimplements verbatim enviroments
+% \usepackage{fancyvrb}  % more flexible verbatim environments
+% \usepackage[version=4]{mhchem} % typesetting of chemical symbols
+% \usepackage{subcaption}  % enables multiple figures in a float environment
+% \usepackage{amsthm}  % typesets theorems, provides new commands for theorem environments and the proof environment
+% \usepackage{xcolor} % redefines colors for colored text
+% \usepackage[version=4]{mhchem} % typesetting of chemical symbols
+% \usepackage{floatflt}  % wraps text around figures and tables
+% \usepackage{wrapfig}  % allows figures or text to wrap around them
+
+
+%% Setup for optional packages
+%% xcolor
+% \definecolor{red}{HTML}{C1272D}
+% \definecolor{green}{HTML}{006837}
+% \definecolor{blue}{HTML}{0071BC}
+% \definecolor{yellow}{HTML}{FBB03B}
+% % Macro that fixes spacing problems with math when color is used
+% \makeatletter
+% \def\mathcolor#1#{\@mathcolor{#1}}
+% \def\@mathcolor#1#2#3{%
+% \protect\leavevmode
+% \begingroup
+%     \color#1{#2}#3%
+%     \endgroup
+%     }
+%     \makeatother
+
+%% dcolumn
+% \newcolumntype{C}{>{$}c<{$}}  % centered math columns
+% \newcolumntype{L}{>{$}l<{$}}  % left justified math columns
+% \newcolumntype{R}{>{$}r<{$}}  % right justified math columns
+% \newcolumntype{.}{D{.}{.}{3.12}}  % decimal point alignment with 3 before and 12 after
+% \newcolumntype{_}{D{.}{.}{10.5}}  % decimal point alignment with 10 before and 5 after
+
+
+%% Extra global typesetting and styling options for beamer
+%% theme and colortheme interact with each other, refer to https://www.hartwork.org/beamer-theme-matrix/ for effects
+\usetheme{Madrid}
+\usecolortheme{seagull}
+
+\usefonttheme{serif}  % choice between sans and serif fonts. class default sans.
+\newcommand\shrinkfont{\fontsize{9pt}{10}\selectfont}  % shrinks font sizes
+
+
+%% Extra symbols
+\DeclareMathOperator{\Real}{Re}  % real part of complex number
+\DeclareMathOperator{\Imag}{Im}  % imaginary part of complex number
+
+\newcommand{\lla}{\left\langle}  % shortened command for left angle bracket with \left delimiter
+\newcommand{\rra}{\right\rangle}  % shortened command for right angle bracket with \right delimiter
+
+\newcommand{\la}{\langle}  % shortened command for left angle bracket
+\newcommand{\ra}{\rangle}  % shortened command for right angle bracket
+
+
+\begin{document}
+
+\title{This is the title of the document}
+\author{John Doe}
+\date{\today}
+\maketitle
+
+\begin{frame}[t]\frametitle{This is a frame of the document}
+
+
+
+\end{frame}
+
+
+%% Bibliography commands
+% \bibliography{prl}  % by default, the bib file should have the same name as the tex file
+% \bibliographystyle{apsrev4-1}  % the up to date apsrev bibliography style
+
+\end{document}

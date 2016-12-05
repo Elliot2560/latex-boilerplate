@@ -1,0 +1,90 @@
+\documentclass[aps,prl,onecolumn,notitlepage,groupedaddress,amsmath,amssymb,11pt]{revtex4-1}
+
+
+%% Necessary
+\usepackage{graphicx}  % supports importing graphics
+\usepackage{dcolumn}  % supports more flexible tables, with decimal formats
+
+
+%% Typeface packages
+% \usepackage{fourier}  % fourier font, with math support
+% \usepackage{charter}  % charter font, with math support
+% \usepackage[bitstream-charter]{mathdesign} % an alternative to charter font
+\usepackage{mathptmx}  % times font, with math support
+\usepackage[T1]{fontenc}  % sets font encoding
+
+
+%% Optional
+% \usepackage{units}  % standardised display of units
+% \usepackage{enumitem}  % more flexible enumeration
+% \usepackage{epstopdf}  % converts eps to pdf so that pdflatex can be used with eps figures
+% \usepackage{url}  % typesets urls with the \url command
+% \usepackage{hyperref}  % enable hyperlinks for internal references
+% \usepackage{verbatim}  % reimplements verbatim enviroments
+% \usepackage{fancyvrb}  % more flexible verbatim environments
+% \usepackage[version=4]{mhchem} % typesetting of chemical symbols
+% \usepackage{subcaption}  % enables multiple figures in a float environment
+% \usepackage{amsthm}  % typesets theorems, provides new commands for theorem environments and the proof environment
+
+
+%% Required by revtex
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{textcase}
+
+
+%% Setup for optional packages
+%% hyperref
+% \hypersetup{
+% colorlinks=true,
+% linkcolor=blue,
+% citecolor=blue,
+% urlcolor=blue
+% }  % color setup for hyperref
+
+%% dcolumn
+% \newcolumntype{C}{>{$}c<{$}}  % centered math columns
+% \newcolumntype{L}{>{$}l<{$}}  % left justified math columns
+% \newcolumntype{R}{>{$}r<{$}}  % right justified math columns
+% \newcolumntype{.}{D{.}{.}{3.12}}  % decimal point alignment with 3 before and 12 after
+% \newcolumntype{_}{D{.}{.}{10.5}}  % decimal point alignment with 10 before and 5 after
+
+%% amsthm
+% \newtheorem{theorem}{Theorem}  % enviroment for a theorem
+% \newtheorem{corollary}{Corollary}  % enviroment for a corollary
+% \newtheorem{lemma}{Lemma}  % enviroment for a lemma
+% \newtheorem{axiom}{Axiom}  % enviroment for an axiom
+
+
+%% Extra global typesetting options
+\allowdisplaybreaks[1]  % adjusts breaking in environments
+% \numberwithin{equation}{section} % number equations within sections
+
+
+%% Extra symbols
+\DeclareMathOperator{\Real}{Re}  % real part of complex number
+\DeclareMathOperator{\Imag}{Im}  % imaginary part of complex number
+
+\newcommand{\lla}{\left\langle}  % shortened command for left angle bracket with \left delimiter
+\newcommand{\rra}{\right\rangle}  % shortened command for right angle bracket with \right delimiter
+
+\newcommand{\la}{\langle}  % shortened command for left angle bracket
+\newcommand{\ra}{\rangle}  % shortened command for right angle bracket
+
+
+\begin{document}
+
+\title{This is the title of the document}
+\author{John Doe}
+\noaffiliation
+\date{\today}
+\maketitle
+
+\section{This is the name of a section}
+
+
+%% Bibliography commands
+% \bibliography{prl}  % by default, the bib file should have the same name as the tex file
+% \bibliographystyle{apsrev4-1}  % the up to date apsrev bibliography style
+
+\end{document}
