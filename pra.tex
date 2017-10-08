@@ -1,4 +1,4 @@
-\documentclass[aps,prl,onecolumn,notitlepage,groupedaddress,amsmath,amssymb,11pt]{revtex4-1}
+\documentclass[aps,pra,onecolumn,notitlepage,groupedaddress,amsmath,amssymb,11pt]{revtex4-1}
 
 
 %% Necessary
@@ -15,7 +15,7 @@
 
 
 %% Optional
-% \usepackage{units}  % standardised display of units
+% \usepackage{siunitx}  % standardised display of units
 % \usepackage{enumitem}  % more flexible enumeration
 % \usepackage{epstopdf}  % converts eps to pdf so that pdflatex can be used with eps figures
 % \usepackage{url}  % typesets urls with the \url command
@@ -25,6 +25,8 @@
 % \usepackage[version=4]{mhchem} % typesetting of chemical symbols
 % \usepackage{subcaption}  % enables multiple figures in a float environment
 % \usepackage{amsthm}  % typesets theorems, provides new commands for theorem environments and the proof environment
+% \usepackage{tikz-cd}  % for commutative diagrams
+% \usepackage[italicdiff]{physics}  % provides useful commands for physics
 
 
 %% Required by revtex
@@ -76,6 +78,15 @@
 
 \newcommand{\la}{\langle}  % shortened command for left angle bracket
 \newcommand{\ra}{\rangle}  % shortened command for right angle bracket
+
+% \newcommand{\R}{\mathbb{R}}
+% \newcommand{\C}{\mathbb{C}}
+% \newcommand{\Z}{\mathbb{Z}}
+% \newcommand{\Q}{\mathbb{Q}}
+% \newcommand{\Sph}{\mathbb{S}}
+
+\newcommand{\ovl}[1]{\overline{#1}}
+\newcommand{\cat}[1]{\mathbf{#1}}
 
 
 \begin{document}
