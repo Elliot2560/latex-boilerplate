@@ -1,4 +1,4 @@
-\documentclass[aps,pra,onecolumn,notitlepage,groupedaddress,amsmath,amssymb,11pt]{revtex4-1}
+\documentclass[aps,pra,onecolumn,notitlepage,groupedaddress,amsmath,11pt]{revtex4-1}
 
 
 %% Necessary
@@ -7,11 +7,10 @@
 
 
 %% Typeface packages
-% \usepackage{fourier}  % fourier font, with math support
-% \usepackage{charter}  % charter font, with math support
-% \usepackage[bitstream-charter]{mathdesign} % an alternative to charter font
-\usepackage{mathptmx}  % times font, with math support
 \usepackage[T1]{fontenc}  % sets font encoding
+\usepackage{textcomp}  % composes fonts
+\renewcommand{\rmdefault}{ptm}  % use adobe times for roman text
+\usepackage[subscriptcorrection, nofontinfo, mtphrb]{mtpro2}
 
 
 %% Optional
