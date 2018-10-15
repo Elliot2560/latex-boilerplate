@@ -1,4 +1,4 @@
-\documentclass[aps,pra,onecolumn,notitlepage,groupedaddress,amsmath,amssymb,11pt]{revtex4-1}
+\documentclass[aps,pra,onecolumn,notitlepage,groupedaddress,amsmath,11pt]{revtex4-1}
 
 
 %% Necessary
@@ -10,8 +10,15 @@
 % \usepackage{fourier}  % fourier font, with math support
 % \usepackage{charter}  % charter font, with math support
 % \usepackage[bitstream-charter]{mathdesign} % an alternative to charter font
-\usepackage{mathptmx}  % times font, with math support
 \usepackage[T1]{fontenc}  % sets font encoding
+\IfFileExists{mtpro2.sty}{
+    \usepackage{textcomp}  % adds companion symbols
+    \renewcommand{\rmdefault}{ptm}  % use adobe times for roman text
+    \usepackage[subscriptcorrection, nofontinfo, mtphrb]{mtpro2}  % uses mptro2 fonts
+}{
+    \usepackage{amssymb}  % math symbols, in conflict with mtpro2
+    \usepackage{mathptmx}  % times font, with math support
+}
 
 
 %% Optional
@@ -28,6 +35,7 @@
 % \usepackage{tikz-cd}  % for commutative diagrams
 % \usepackage[italicdiff]{physics}  % provides useful commands for physics
 % \usepackage{todonotes}
+% \usepackage{mathtools}  % provides definition for new delimiter functions
 
 
 %% Required by revtex
@@ -63,6 +71,11 @@
 % \newtheorem*{axiom*}{Axiom}  % unnumbered enviroment for an axiom
 % \newtheorem{definition}{Definition}  % environment for a definition
 % \newtheorem*{definition*}{Definition}  % unnumbered enviroment for a definition
+% \newtheorem{proposition}{Proposition}  % enviroment for a proposition
+% \newtheorem*{proposition*}{Proposition}  % unnumbered environment for a proposition
+
+%% tikz
+% \usetikzlibrary{decorations.markings,arrows,decorations.text,decorations.pathreplacing}
 
 
 %% Extra global typesetting options
@@ -87,8 +100,9 @@
 % \newcommand{\Sph}{\mathbb{S}}
 
 \newcommand{\ovl}[1]{\overline{#1}}
-\newcommand{\cat}[1]{\mathbf{#1}}
 
+% \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+% \DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
 
 \begin{document}
 
@@ -97,6 +111,8 @@
 \noaffiliation
 \date{\today}
 \maketitle
+
+% \listoftodos
 
 \section{This is the name of a section}
 
